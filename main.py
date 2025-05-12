@@ -12,7 +12,7 @@ bot = Bot(token=BOT_TOKEN, parse_mode="HTML")
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
-async def on_startup(dispatcher)
+async def on_startup(dispatcher):
     await start_backup_task()
     logging.info("Бот запущен.")
 
